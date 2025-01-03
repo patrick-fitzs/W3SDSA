@@ -16,6 +16,7 @@ class Queue:
         # Add an element to the end of the queue
         new_node = Node(element)
         if self.rear is None:  # If the queue is empty
+            # new node is assigned to both rear and front
             self.front = self.rear = new_node
             self.length += 1
             return
@@ -30,6 +31,7 @@ class Queue:
             return "Queue is empty"
         # Remove the front node and update the front pointer
         temp = self.front
+        # new front is temp.next so lets say it moves from 1 to 2
         self.front = temp.next
         self.length -= 1
         if self.front is None:  # If the queue becomes empty

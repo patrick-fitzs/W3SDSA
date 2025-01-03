@@ -19,7 +19,9 @@ class Stack:
     def pop(self):
         if self.isEmpty():
             return "Stack is empty"
+        # head is popper
         popped_node = self.head
+        # new head is head.next, so it skips the first to show new head
         self.head = self.head.next
         self.size -= 1
         return popped_node.value

@@ -38,3 +38,4 @@ def inOrderTraversal(node):
     inOrderTraversal(node.right)
 
 inOrderTraversal(root)
+
